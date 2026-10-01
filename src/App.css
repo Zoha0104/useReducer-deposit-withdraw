@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 380px;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.balance {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.amount-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.amount-input:focus {
+  border-color: #6366f1;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deposit {
+  background: #16a34a;
+}
+
+.withdraw {
+  background: #dc2626;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
